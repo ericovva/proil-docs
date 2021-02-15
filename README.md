@@ -65,6 +65,66 @@
 ```  
 Внимание! Заявки в статусе processing не удаляются.
 
+
+#### Получение информации о ценах на топливо
+Метод: GET  
+Путь: {domain name}/carshaing_api/products/
+
+Пример ответа сервера:
+```json
+[
+  {
+    "name": "Незамерзайка",
+    "price": "103.00",
+    "price_from_yandex": "0.00",
+    "price_from_mfa": "0.00",
+    "is_fuel": false
+  },
+  {
+    "name": "Доставка внутри МКАД",
+    "price": "85.00",
+    "price_from_yandex": "0.00",
+    "price_from_mfa": "0.00",
+    "is_fuel": false
+  },
+  {
+    "name": "Доставка вне МКАД",
+    "price": "150.00",
+    "price_from_yandex": "0.00",
+    "price_from_mfa": "0.00",
+    "is_fuel": false
+  },
+  {
+    "name": "АИ-100",
+    "price": "0.00",
+    "price_from_yandex": "0.00",
+    "price_from_mfa": "0.00",
+    "is_fuel": true
+  },
+  {
+    "name": "DIESEL",
+    "price": "64.48",
+    "price_from_yandex": "65.37",
+    "price_from_mfa": "0.00",
+    "is_fuel": true
+  },
+  {
+    "name": "АИ-92",
+    "price": "52.50",
+    "price_from_yandex": "54.20",
+    "price_from_mfa": "54.39",
+    "is_fuel": true
+  },
+  {
+    "name": "АИ-95",
+    "price": "61.78",
+    "price_from_yandex": "63.68",
+    "price_from_mfa": "63.97",
+    "is_fuel": true
+  }
+]
+```
+
 #### Получение информации о текущих заявках
 Метод: GET  
 Путь: {domain name}/carshaing_api/orders/
